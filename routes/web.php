@@ -13,10 +13,6 @@
 
 Route::get('/', 'MainController@index');
 
-Route::get('/categories', function () {   
-    return view('categories');              
-}); 
+Route::get('/categories', 'MainController@categories');
 
-Route::get('/mobiles/iphone_x_64', function () {
-    return view('product');                       
-});
+Route::get('/mobiles/iphone_x64', 'MainController@product');
