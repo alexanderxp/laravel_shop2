@@ -12,7 +12,7 @@ class MainController extends Controller
     public function categories(){  
         return view('categories');          
     }    
-     public function product(){  
+     public function product($product){  
         return view('product');  
     }     
 }

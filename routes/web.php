@@ -15,4 +15,4 @@ Route::get('/', 'MainController@index');
 
 Route::get('/categories', 'MainController@categories');
 
-Route::get('/mobiles/iphone_x64', 'MainController@product');
+Route::get('/mobiles/{product}', 'MainController@product');
