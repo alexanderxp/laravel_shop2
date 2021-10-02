@@ -15,4 +15,4 @@ Route::get('/', 'MainController@index');
 
 Route::get('/categories', 'MainController@categories');
 
-Route::get('/mobiles/{product}', 'MainController@product');
+Route::get('/mobiles/{product?}', 'MainController@product');
