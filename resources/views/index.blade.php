@@ -7,9 +7,9 @@
 
     <title>Интернет Магазин: Главная</title>
 
-    <link 
-        href="https://fonts.googleapis.com/css?family=Raleway:100,600" 
-        rel="stylesheet" 
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,600"
+        rel="stylesheet"
         type="text/css"
     >
     <script src="/js/jquery.min.js"></script>
@@ -44,7 +44,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                                     <li><a href="http://internet-shop.tmweb.ru/login">Войти</a></li>
-                
+
                             </ul>
         </div>
     </div>
@@ -83,8 +83,8 @@
                     <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
         <div class="labels">
-            
-            
+
+
                     </div>
         <img src="http://internet-shop.tmweb.ru/storage/products/iphone_x.jpg" alt="iPhone X 64GB">
         <div class="caption">
@@ -104,8 +104,8 @@
                     <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
         <div class="labels">
-            
-            
+
+
                     </div>
         <img src="http://internet-shop.tmweb.ru/storage/products/iphone_x_silver.jpg" alt="iPhone X 256GB">
         <div class="caption">
@@ -125,8 +125,8 @@
                     <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
         <div class="labels">
-            
-            
+
+
                     </div>
         <img src="http://internet-shop.tmweb.ru/storage/products/htc_one_s.png" alt="HTC One S">
         <div class="caption">
@@ -145,8 +145,8 @@
                     <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
         <div class="labels">
-            
-            
+
+
                     </div>
         <img src="http://internet-shop.tmweb.ru/storage/products/iphone_5.jpg" alt="iPhone 5SE">
         <div class="caption">
@@ -166,8 +166,8 @@
                     <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
         <div class="labels">
-            
-            
+
+
                     </div>
         <img src="http://internet-shop.tmweb.ru/storage/products/beats.jpg" alt="Наушники Beats Audio">
         <div class="caption">
@@ -187,8 +187,8 @@
                     <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
         <div class="labels">
-            
-            
+
+
                     </div>
         <img src="http://internet-shop.tmweb.ru/storage/products/gopro.jpg" alt="Камера GoPro">
         <div class="caption">
@@ -208,19 +208,19 @@
             </div>
     <nav>
         <ul class="pagination">
-            
+
                             <li class="page-item disabled" aria-disabled="true" aria-label="pagination.previous">
                     <span class="page-link" aria-hidden="true">&lsaquo;</span>
                 </li>
-            
-            
-                            
-                
-                
+
+
+
+
+
                                                                                         <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
                                                                                                 <li class="page-item"><a class="page-link" href="?&amp;page=2">2</a></li>
-                                                                        
-            
+
+
                             <li class="page-item">
                     <a class="page-link" href="?&amp;page=2" rel="next" aria-label="pagination.next">&rsaquo;</a>
                 </li>
