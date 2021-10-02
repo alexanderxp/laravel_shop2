@@ -49,7 +49,7 @@
 
 <div class="container">
     <div class="starter-template">
-    <h1>{{$category}}
+    <h1>
     @if( $category=='mobiles' )
         Мобильные телефоны
         @elseif($category == 'portable')            
