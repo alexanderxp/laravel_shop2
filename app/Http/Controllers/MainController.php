@@ -12,6 +12,9 @@ class MainController extends Controller
     public function categories(){  
         return view('categories');          
     }    
+    public function category($category){     
+        dd($category);    
+    }       
     public function product($product =null){  
         return view('product' ,['product'=> $product]);  
     }     
