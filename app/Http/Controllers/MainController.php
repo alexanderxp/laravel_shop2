@@ -24,4 +24,7 @@ class MainController extends Controller
     public function basket(){      
         return view('basket');         
     }    
+    public function basketPlace(){
+        return view('order');
+    }
 }
