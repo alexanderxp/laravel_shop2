@@ -1,4 +1,6 @@
-@extends('master')  
+@extends('master')
+
+@section('title', 'Категория' . $category->name ) 
 
 @section ('content')
 
