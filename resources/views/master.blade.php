@@ -18,8 +18,8 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="http://internet-shop.tmweb.ru">
-                Интернет Магазин 
+            <a class="navbar-brand" href="{{route('index')}}">
+                Интернет Магазин
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
