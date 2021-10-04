@@ -19,7 +19,7 @@
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="http://internet-shop.tmweb.ru">
-                Интернет Магазин - {{$file ?? ''}}
+                Интернет Магазин 
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
