@@ -1,4 +1,6 @@
-@extends('master')  
+@extends('master')
+
+@section('title', 'Главная')
 
 @section ('content')
 
