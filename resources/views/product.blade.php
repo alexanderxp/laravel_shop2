@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master', [file -> 'product'] )
 
 @section('title' , 'Товар') 
 
