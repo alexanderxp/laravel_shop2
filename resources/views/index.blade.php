@@ -1,4 +1,4 @@
-@extends('master', [file -> 'index'] )
+@extends('master')
 
 @section('title', 'Главная')
 
