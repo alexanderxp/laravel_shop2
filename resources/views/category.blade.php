@@ -13,7 +13,7 @@
     </p>
     <div class="row">
 
-    @include('card')
+    @include('card' ,['category' => $category])
 
             </div>
     </div>
