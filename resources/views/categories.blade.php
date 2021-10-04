@@ -1,6 +1,8 @@
-@extends('master')  
+@extends('master')
 
-@section ('content') 
+@section('title' , 'Все категории')
+
+@section ('content')
 
     <div class="starter-template">
     @foreach($categories as $category)
