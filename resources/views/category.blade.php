@@ -13,7 +13,9 @@
     </p>
     <div class="row">
 
-    @include('card' ,['category' => $category])
+        @foreach($products as $product)
+            @include('card', compact('product'))
+        @endforeach   
 
             </div>
     </div>
