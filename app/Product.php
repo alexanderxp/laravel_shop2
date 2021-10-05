@@ -8,7 +8,6 @@ class Product extends Model
 {
     public function getCategory()
     {
-        $category = Category::where('id', $this ->category_id)->first();
-        dd($category);
+        return Category::find($this ->category_id); 
     }
 }
