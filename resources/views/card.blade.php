@@ -9,6 +9,7 @@
                 <a href="{{route('basket')}}" class="btn btn-primary" role="button">
                         В корзину
                 </a>
+                    {{ $product->getCategory() }}
                     @isset($category)
                     {{ $category->name }}
                     @endisset
