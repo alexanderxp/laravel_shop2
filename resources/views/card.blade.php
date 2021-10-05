@@ -9,10 +9,7 @@
                 <a href="{{route('basket')}}" class="btn btn-primary" role="button">
                         В корзину
                 </a>
-                    {{ $product->getCategory() }}
-                    @isset($category)
-                    {{ $category->name }}
-                    @endisset
+                    {{ $product->getCategory()->name }}
                     <a href="http://internet-shop.tmweb.ru/mobiles/iphone_x_64"
                         class="btn btn-default"
                         role="button">Подробнее
