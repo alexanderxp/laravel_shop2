@@ -18,7 +18,8 @@ class MainController extends Controller
     }
     public function category($code){
         $category = Category::where('code', $code)->first();
-        return view('category', compact('category'));
+        $products = Product::get();
+        return view('category', compact('category','products'));
     }
      public function product($category, $product = null){
         return view('product' ,['product'=> $product]);
