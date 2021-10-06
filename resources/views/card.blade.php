@@ -10,10 +10,10 @@
                         В корзину
                 </a>
                     {{ $product->category->name }}  
-                    <a href="http://internet-shop.tmweb.ru/mobiles/iphone_x_64"
-                        class="btn btn-default"
-                        role="button">Подробнее
-                    </a>
+                    <a href="{{ route('product', [$product->category->code, $product->code]) }}" class="btn btn-default" 
+                        role="button">Подробнее</a>
+                    <a href="http://internet-shop.tmweb.ru/mobiles/iphone_x_64" class="btn btn-default" 
+                        role="button">Подробнее</a>
             </p>
         </div>
     </div>
