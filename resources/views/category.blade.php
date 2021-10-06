@@ -13,7 +13,7 @@
     </p>
     <div class="row">
 
-        @foreach($products as $product)
+        @foreach($category->products as $product)
             @include('card', compact('product'))
         @endforeach   
 
