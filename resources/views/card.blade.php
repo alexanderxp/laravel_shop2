@@ -14,6 +14,7 @@
                     class="btn btn-default" role="button">
                     Подробнее
                 </a>
+                @csrf
             </form>
             </p>
         </div>
