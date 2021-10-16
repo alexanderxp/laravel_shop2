@@ -22,3 +22,5 @@ Route::get('/{category}/{product?}', 'MainController@product')-> name('product')
 Route::get('/basket', 'BasketController@basket')-> name('basket');
 
 Route::get('/basket/place', 'BasketController@basketPlace')-> name('basket-place');
+
+Route::post('/basket/add/{id}', 'BasketController@basketAdd')->name('basket-add');
