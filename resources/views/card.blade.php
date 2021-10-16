@@ -7,9 +7,9 @@
             <p>{{$product->price}}</p>           
             <p>
             <form action="{{ route('basket-add', $product ) }}" method="POST">
-                <a href="{{route('basket')}}" class="btn btn-primary" role="button">
+                <button type="submit" class="btn btn-primary" role="button">
                     В корзину
-                </a>
+                </button>
                 <a href="{{ route('product', [$product->category->code, $product->code]) }}" 
                     class="btn btn-default" role="button">
                     Подробнее
