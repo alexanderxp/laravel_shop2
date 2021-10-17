@@ -59,8 +59,8 @@
                         </form>                                           
                     </div>                                             
                 </td>                                                    
-                <td>71990 $</td>                                           
-                <td>143980 $</td>                                        
+                <td>{{ $product->price }} $</td>
+                <td>{{ $product->price }} $</td>                                                                               
             </tr>
             @endforeach                                                         
             <tr>                                                           
