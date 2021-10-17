@@ -44,7 +44,7 @@
                             <input type="hidden" name="_token"            
                                 value="cuWxcdjeVpIBpSvQxFGrBoz8Q2Q18ZteNVMK0g86">     
                         </form>                                          
-                        <form action="http://internet-shop.tmweb.ru/basket/add/1"     
+                        <form action="{{ route('basket-add' , $product) }}"     
                             method="POST">                                   
                             <button type="submit" class="btn btn-success"    
                                 href="">                                 
@@ -52,10 +52,7 @@
                                     class="glyphicon glyphicon-plus" aria-hidden="true">   
                                 </span>         
                             </button>            
-                            <input                                       
-                                type="hidden"                               
-                                name="_token"                                
-                                value="cuWxcdjeVpIBpSvQxFGrBoz8Q2Q18ZteNVMK0g86">   
+                            @csrf  
                         </form>                                           
                     </div>                                             
                 </td>                                                    
