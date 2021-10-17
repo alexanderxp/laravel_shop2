@@ -17,14 +17,14 @@ class BasketController extends Controller
     {
         $orderId = session('orderId');
         if(is_null($orderId)){
-            $orderId = Order::create()->id;     
+            $order = Order::create()->id;
             session(['orderId'=>$order->id]);   
         }else{         
            $order = Order::find($orderId);        
         }                       
-        $order->products()->attach($productId);  
+        $order->products()->attach($productId);
 
-        dump($order->products);             
+        dump($order->products);
    
         dump($order);
     }
