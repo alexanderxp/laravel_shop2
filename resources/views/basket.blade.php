@@ -18,7 +18,8 @@
                 <th>Стоимость</th>                                          
             </tr>                                                            
         </thead>                                                            
-        <tbody>                                                              
+        <tbody>
+        @foreach($order->products as $product)                                                              
             <tr>                                                             
                 <td>                                                        
                     <a href="http://internet-shop.tmweb.ru/mobiles/iphone_x_64">    
@@ -58,12 +59,13 @@
                         </form>                                           
                     </div>                                             
                 </td>                                                    
-                <td>71990 ?</td>                                           
-                <td>143980 ?</td>                                        
-            </tr>                                                         
+                <td>71990 $</td>                                           
+                <td>143980 $</td>                                        
+            </tr>
+            @endforeach                                                         
             <tr>                                                           
                 <td colspan="3">Общая стоимость:</td>                       
-                <td>143980 ?</td>                                           
+                <td>143980 $</td>                                           
             </tr>                                                            
         </tbody>                                                           
         </table>                                                          
