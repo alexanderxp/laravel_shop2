@@ -22,7 +22,7 @@
         @foreach($order->products as $product)                                                              
             <tr>                                                             
                 <td>                                                        
-                    <a href="http://internet-shop.tmweb.ru/mobiles/iphone_x_64">    
+                <a href="{{ route('product' , [$product->category->code , $product->code]) }}">    
                         <img height="56px"                                          
                             src="http://internet-shop.tmweb.ru/storage/products/iphone_x.jpg">  
                             {{ $product->name }}                                
