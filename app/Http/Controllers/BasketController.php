@@ -22,6 +22,10 @@ class BasketController extends Controller
         }else{         
            $order = Order::find($orderId);        
         }                       
+        $order->products()->attach($productId);  
+
+        dump($order->products);             
+   
         dump($order);
     }
 }
