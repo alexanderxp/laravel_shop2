@@ -8,7 +8,11 @@ use Illuminate\Http\Request;
 class BasketController extends Controller
 {
     public function basket(){
-        return view('basket');
+        $orderId = session('orderId');  
+        if(is_null($orderId)){   
+           $order = findOrFail($orderId);  
+        }                              
+        return view('basket', compact('order'));
     }
     public function basketPlace(){
         return view('order');
