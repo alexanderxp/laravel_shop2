@@ -25,7 +25,7 @@
                     <a href="http://internet-shop.tmweb.ru/mobiles/iphone_x_64">    
                         <img height="56px"                                          
                             src="http://internet-shop.tmweb.ru/storage/products/iphone_x.jpg">  
-                            iPhone X 64GB                                  
+                            {{ $product->name }}                                
                     </a>                                                    
                 </td>                                                     
                 <td>                                                       
