@@ -30,7 +30,7 @@
                 </td>                                                     
                 <td>                                                       
                     <span class="badge">                                   
-                        2                                                  
+                        {{ $product->pivot->count }}                                                 
                     </span>                                                
                     <div class="btn-group form-inline">                     
                         <form action="{{ route('basket-remove' , $product) }}"    
