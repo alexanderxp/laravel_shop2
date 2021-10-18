@@ -29,16 +29,14 @@ class BasketController extends Controller
         $order->products()->attach($productId);
 
         return redirect()->route('basket');
-
-        return view('basket', compact('order'));
     }
     public function basketRemove($productId) {
         $orderId = session('orderId');
         if(is_null($orderId)){
-           return view('basket', compact('order'));
+            return redirect()->route('basket');
         }
         $order = Order::find($orderId); 
         $order->products()->detach($productId); 
-        return view('basket', compact('order'));
+        return redirect()->route('basket');
      }
 }
