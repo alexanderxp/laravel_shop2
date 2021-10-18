@@ -27,6 +27,9 @@ class BasketController extends Controller
            $order = Order::find($orderId);        
         }                       
         $order->products()->attach($productId);
+
+        return redirect()->route('basket');
+
         return view('basket', compact('order'));
     }
     public function basketRemove($productId) {
