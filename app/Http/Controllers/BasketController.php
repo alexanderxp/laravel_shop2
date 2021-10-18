@@ -27,7 +27,8 @@ class BasketController extends Controller
            $order = Order::find($orderId);        
         }                  
         if($order->products->contains($productId)){
-            dd('yes');
+            $pivotRow = $order->products()->where('product_id', $productId)->first();
+            dd($pivotRow); 
         } else {
             $order->products()->attach($productId);
         } 
