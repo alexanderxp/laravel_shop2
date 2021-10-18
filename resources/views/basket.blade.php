@@ -18,13 +18,14 @@
                 <th>Стоимость</th>                                          
             </tr>                                                            
         </thead>                                                            
-        <tbody>                                                              
+        <tbody>
+        @foreach($order->products as $product)                                                              
             <tr>                                                             
                 <td>                                                        
-                    <a href="http://internet-shop.tmweb.ru/mobiles/iphone_x_64">    
+                <a href="{{ route('product' , [$product->category->code , $product->code]) }}">    
                         <img height="56px"                                          
                             src="http://internet-shop.tmweb.ru/storage/products/iphone_x.jpg">  
-                            iPhone X 64GB                                  
+                            {{ $product->name }}                                
                     </a>                                                    
                 </td>                                                     
                 <td>                                                       
@@ -43,7 +44,7 @@
                             <input type="hidden" name="_token"            
                                 value="cuWxcdjeVpIBpSvQxFGrBoz8Q2Q18ZteNVMK0g86">     
                         </form>                                          
-                        <form action="http://internet-shop.tmweb.ru/basket/add/1"     
+                        <form action="{{ route('basket-add' , $product) }}"     
                             method="POST">                                   
                             <button type="submit" class="btn btn-success"    
                                 href="">                                 
@@ -51,19 +52,17 @@
                                     class="glyphicon glyphicon-plus" aria-hidden="true">   
                                 </span>         
                             </button>            
-                            <input                                       
-                                type="hidden"                               
-                                name="_token"                                
-                                value="cuWxcdjeVpIBpSvQxFGrBoz8Q2Q18ZteNVMK0g86">   
+                            @csrf  
                         </form>                                           
                     </div>                                             
                 </td>                                                    
-                <td>71990 ?</td>                                           
-                <td>143980 ?</td>                                        
-            </tr>                                                         
+                <td>{{ $product->price }} $</td>
+                <td>{{ $product->price }} $</td>                                                                               
+            </tr>
+            @endforeach                                                         
             <tr>                                                           
                 <td colspan="3">Общая стоимость:</td>                       
-                <td>143980 ?</td>                                           
+                <td>143980 $</td>                                           
             </tr>                                                            
         </tbody>                                                           
         </table>                                                          
