@@ -46,7 +46,15 @@ class BasketController extends Controller
             return redirect()->route('basket');
         }
         $order = Order::find($orderId); 
-        $order->products()->detach($productId); 
+
+        if($order->products->contains($productId)){
+            $pivotRow = $order->products()->where('product_id', $productId)->first()->pivot;
+            $pivotRow->count++;                                                   
+            $pivotRow->update();
+            dd($pivotRow); 
+        } else {
+            $order->products()->detach($productId);
+        }
         return redirect()->route('basket');
      }
 }
