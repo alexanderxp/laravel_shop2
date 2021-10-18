@@ -28,7 +28,9 @@ class BasketController extends Controller
         }                  
         if($order->products->contains($productId)){
             dd('yes');
-        }
+        } else {
+            $order->products()->attach($productId);
+        } 
         dd('no');
 
         $order->products()->attach($productId);
