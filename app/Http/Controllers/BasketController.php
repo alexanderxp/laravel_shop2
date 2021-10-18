@@ -30,13 +30,10 @@ class BasketController extends Controller
             $pivotRow = $order->products()->where('product_id', $productId)->first()->pivot;
             $pivotRow->count++;                                                   
             $pivotRow->update();
-            dd($pivotRow); 
+
         } else {
             $order->products()->attach($productId);
         } 
-        dd('no');
-
-        $order->products()->attach($productId);
 
         return redirect()->route('basket');
     }
@@ -49,12 +46,14 @@ class BasketController extends Controller
 
         if($order->products->contains($productId)){
             $pivotRow = $order->products()->where('product_id', $productId)->first()->pivot;
-            $pivotRow->count++;                                                   
-            $pivotRow->update();
-            dd($pivotRow); 
-        } else {
-            $order->products()->detach($productId);
+            if($pivotRow->count < 2 ){
+               $order->products()->detach($productId);    
+            } else {
+            $pivotRow->count--; 
+            $pivotRow->update(); 
+
+            }
         }
         return redirect()->route('basket');
-     }
+    }
 }
