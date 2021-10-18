@@ -25,7 +25,12 @@ class BasketController extends Controller
             session(['orderId'=>$order->id]);   
         }else{         
            $order = Order::find($orderId);        
-        }                       
+        }                  
+        if($order->products->contains($productId)){
+            dd('yes');
+        }
+        dd('no');
+
         $order->products()->attach($productId);
 
         return redirect()->route('basket');
