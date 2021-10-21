@@ -30,10 +30,10 @@
                 </td>                                                     
                 <td>                                                       
                     <span class="badge">                                   
-                        2                                                  
+                        {{ $product->pivot->count }}                                                 
                     </span>                                                
                     <div class="btn-group form-inline">                     
-                        <form action="http://internet-shop.tmweb.ru/basket/remove/1"    
+                        <form action="{{ route('basket-remove' , $product) }}"    
                             method="POST">                                  
                             <button type="submit" class="btn btn-danger" href="">      
                                 <span                                       
@@ -41,8 +41,7 @@
                                     aria-hidden="true">                 
                                </span>                                    
                             </button>                                      
-                            <input type="hidden" name="_token"            
-                                value="cuWxcdjeVpIBpSvQxFGrBoz8Q2Q18ZteNVMK0g86">     
+                            @csrf     
                         </form>                                          
                         <form action="{{ route('basket-add' , $product) }}"     
                             method="POST">                                   
@@ -57,12 +56,12 @@
                     </div>                                             
                 </td>                                                    
                 <td>{{ $product->price }} $</td>
-                <td>{{ $product->price }} $</td>                                                                               
+                <td>{{ $product->getPriceForCount() }} $</td>                                                                               
             </tr>
             @endforeach                                                         
             <tr>                                                           
                 <td colspan="3">Общая стоимость:</td>                       
-                <td>143980 $</td>                                           
+                <td>{{ $order->getFullPrice() }} $</td>                                       
             </tr>                                                            
         </tbody>                                                           
         </table>                                                          
