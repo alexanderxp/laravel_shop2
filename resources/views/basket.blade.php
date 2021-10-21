@@ -56,7 +56,7 @@
                     </div>                                             
                 </td>                                                    
                 <td>{{ $product->price }} $</td>
-                <td>{{ $product->getPriceForCount($product->pivot->count) }} $</td>                                                                               
+                <td>{{ $product->getPriceForCount() }} $</td>                                                                               
             </tr>
             @endforeach                                                         
             <tr>                                                           
