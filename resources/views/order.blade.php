@@ -9,7 +9,7 @@
     <div class="container">                              
         <div class="row justify-content-center">              
             <p>Общая стоимость: <b>{{ $order->getFullPrice() }} руб.</b></p>                               
-            <form action="{{ route(basket-confirm) }}" method="POST">                                                    
+            <form action="{{ route('basket-confirm') }}" method="POST">                                                    
                 <div>                                                               
                     <p>Укажите свои имя и номер телефона,                           
                        чтобы наш менеджер мог с вами связаться:                    
