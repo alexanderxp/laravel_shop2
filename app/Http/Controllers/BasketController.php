@@ -20,7 +20,7 @@ class BasketController extends Controller
            return redirect()->route( 'index' );               
         }                                                
         $order = Order::find($orderId);                 
-        dd($request->all());
+        dd($request->name);
         return redirect()->route('index');         
      }
     public function basketPlace(){
