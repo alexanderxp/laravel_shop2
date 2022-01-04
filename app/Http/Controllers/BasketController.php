@@ -14,6 +14,9 @@ class BasketController extends Controller
         }
         return view('basket', compact('order'));
     }
+    public function basketConfirm(){
+
+    }
     public function basketPlace(){
         $orderId = session ( 'orderId' );            
         if (is_null($orderId)){                       
