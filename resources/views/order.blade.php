@@ -8,7 +8,7 @@
        <h1>Подтвердите заказ:</h1>      
     <div class="container">                              
         <div class="row justify-content-center">              
-            <p>Общая стоимость: <b>0 ?.</b></p>                               
+            <p>Общая стоимость: <b>{{ $order->getFullPrice() }} руб.</b></p>                               
             <form action="http://internet-shop.tmweb.ru/basket/place"               
                    method="POST">                                                    
                 <div>                                                               
