@@ -4,7 +4,7 @@
 
 @section ('content')
 
-    <div class="starter-template">
+
                             <h1>iPhone X 64GB</h1>
                             <h2>{{ $product }}</h2>
     <p>Цена: <b>71990 $</b></p>
@@ -15,5 +15,5 @@
             <button type="submit" class="btn btn-success" role="button">Добавить в корзину</button>
 
             <input type="hidden" name="_token" value="TYiiiqpWE3MQ2QyjyLGH89lO1KkFjBoflayp6llD">        </form>
-        </div>
+
 @endsection
