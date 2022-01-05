@@ -25,6 +25,7 @@ class BasketController extends Controller
         //$order->email = $request->email;       
         $order->status = 1;              
         $order->save();
+        session()->forget('orderId');
         return redirect()->route('index');         
      }
     public function basketPlace(){
