@@ -20,7 +20,7 @@ class BasketController extends Controller
            return redirect()->route( 'index' );               
         }   
         $order = Order::find($orderId);                                             
-        $result = $order->saveOrder($request->name, $request->phone);
+        $success = $order->saveOrder($request->name, $request->phone);
         return redirect()->route('index');         
     }
     public function basketPlace(){
