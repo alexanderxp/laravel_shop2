@@ -4,13 +4,12 @@
 
 @section ('content')
 
-<div class="starter-template">              
+            
        <h1>Подтвердите заказ:</h1>      
     <div class="container">                              
         <div class="row justify-content-center">              
-            <p>Общая стоимость: <b>0 ?.</b></p>                               
-            <form action="http://internet-shop.tmweb.ru/basket/place"               
-                   method="POST">                                                    
+            <p>Общая стоимость: <b>{{ $order->getFullPrice() }} руб.</b></p>                               
+            <form action="{{ route('basket-confirm') }}" method="POST">                                                    
                 <div>                                                               
                     <p>Укажите свои имя и номер телефона,                           
                        чтобы наш менеджер мог с вами связаться:                    
@@ -69,7 +68,8 @@
                     <br>                                                            
                     <input type="hidden"                                            
                            name="_token"                                              
-                           value="cuWxcdjeVpIBpSvQxFGrBoz8Q2Q18ZteNVMK0g86">            
+                           value="cuWxcdjeVpIBpSvQxFGrBoz8Q2Q18ZteNVMK0g86"> 
+                    @csrf           
                     <input type="submit"                                                
                            class="btn btn-success"                                      
                            value="Подтвердите заказ">                                   
@@ -77,6 +77,6 @@
             </form>                                                                     
         </div>                                                                         
     </div>                                                                              
-</div>                                                                                  
+                                                                                 
 
 @endsection
