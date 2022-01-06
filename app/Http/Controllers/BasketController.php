@@ -18,16 +18,11 @@ class BasketController extends Controller
         $orderId = session ( 'orderId' );                
         if (is_null($orderId)){                         
            return redirect()->route( 'index' );               
-        }                                                
-        $order = Order::find($orderId);                 
-        $order->name = $request->name;          
-        $order->phone = $request->phone;        
-        //$order->email = $request->email;       
-        $order->status = 1;              
-        $order->save();
-        session()->forget('orderId');
+        }   
+        $order = Order::find($orderId);                                             
+        $result = $order->saveOrder($request->name, $request->phone);
         return redirect()->route('index');         
-     }
+    }
     public function basketPlace(){
         $orderId = session ( 'orderId' );            
         if (is_null($orderId)){                       
