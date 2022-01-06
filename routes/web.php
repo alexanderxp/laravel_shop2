@@ -11,6 +11,8 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/', 'MainController@index')-> name('index');                       
 
 Route::get('/categories', 'MainController@categories')-> name('categories');  
