@@ -10,8 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-//
-Auth::routes();  
+
+Auth::routes([
+    'reset'=>false,
+    'confirm'=>false,
+    'verify'=>false,
+ ]); 
 
 Route::get('/', 'MainController@index')-> name('index');                       
 
