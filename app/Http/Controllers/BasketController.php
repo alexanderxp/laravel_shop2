@@ -21,6 +21,11 @@ class BasketController extends Controller
         }   
         $order = Order::find($orderId);                                             
         $success = $order->saveOrder($request->name, $request->phone);
+        if ($success){                                                   
+            session()->flash('success','Ваш заказ принят в обработку!');  
+        } else {                                                   
+            session()->flash('warning','Слусилась ошибка');        
+        }
         return redirect()->route('index');         
     }
     public function basketPlace(){
