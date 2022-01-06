@@ -5,7 +5,7 @@
 @section ('content')
 
                                                
-    <p class="alert alert-success">Добавлен товар iPhone X 64GB</p>          
+             
         <h1>Корзина</h1>                                                     
     <p>Оформление заказа</p>                                                 
     <div class="panel">                                                      
