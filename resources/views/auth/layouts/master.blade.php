@@ -52,7 +52,7 @@
         <div class="card-header">@yield('title')</div>
 
             <div class="card-body">
-            @yield('comtent')
+            @yield('content')
             </div>
         </div>
     </div>
