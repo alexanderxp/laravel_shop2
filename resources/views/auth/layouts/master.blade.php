@@ -33,14 +33,14 @@
 
                                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav-item">
-                            <a class="nav-link" href="http://internet-shop.tmweb.ru/login">Войти</a>
+                        <a class="nav-link" href="{{ route('login') }}">Войти</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://internet-shop.tmweb.ru/register">Зарегистрироваться</a>
+                            <a class="nav-link" href="{{ route('register') }}">Зарегистрироваться</a>
                         </li>
                     </ul>
                 
-                            </div>
+            </div>
         </div>
     </nav>
 
