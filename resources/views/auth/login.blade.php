@@ -1,6 +1,6 @@
 @extends('auth.layouts.master')
 
-@section('title', '')
+@section('title', 'Авторизация')
 
 @section('content')
 <form method="POST" action="http://internet-shop.tmweb.ru/login" aria-label="Login">
