@@ -3,8 +3,8 @@
 @section('title', 'Авторизация')
 
 @section('content')
-<form method="POST" action="http://internet-shop.tmweb.ru/login" aria-label="Login">
-    <input type="hidden" name="_token" value="ly1JLlbqtZnTctk5xSOikUchaLf9zdXceSpYj7BV">                    
+<form method="POST" action="{{ route('login') }}" aria-label="Login">
+    @csrf                    
     <div class="form-group row">
         <label for="email" class="col-sm-4 col-form-label text-md-right">
             E-Mail
