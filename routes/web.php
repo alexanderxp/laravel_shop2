@@ -17,6 +17,8 @@ Auth::routes([
     'verify'=>false,
  ]); 
 
+ Route::get('/logout', 'Auth\LoginController@logout')-> name('get-logout');
+
 Route::get('/', 'MainController@index')-> name('index');                       
 
 Route::get('/categories', 'MainController@categories')-> name('categories');  
