@@ -19,7 +19,9 @@ Auth::routes([
 
 Route::get('/logout', 'Auth\LoginController@logout')-> name('get-logout');
 
-Route::get('/home', 'HomeController@index')-> name('home')->middleware('auth');
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/home', 'HomeController@index')-> name('home');    
+});
 
 Route::get('/', 'MainController@index')-> name('index');                       
 
