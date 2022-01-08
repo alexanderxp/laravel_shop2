@@ -23,7 +23,7 @@
 <div id="app">
     <nav class="navbar navbar-default navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
-            <a class="navbar-brand" href="http://internet-shop.tmweb.ru">
+            <a class="navbar-brand" href="{{ route('index') }}">
                 Вернуться на сайт
             </a>
 
@@ -51,12 +51,12 @@
                                 Администратор
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="http://internet-shop.tmweb.ru/logout"
+                                <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     Выйти
                                 </a>
-                                <form id="logout-form" action="http://internet-shop.tmweb.ru/logout" method="POST" style="display: none">
-                                    <input type="hidden" name="token" value="d7QDs9wqIfjbDPmRnYBPyi5nJYXSvEsQJVGEK2Jg">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none">
+                                    @csrf 
                                 </form>
                             </div>
                         </li>
