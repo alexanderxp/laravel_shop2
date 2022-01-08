@@ -39,6 +39,23 @@
                             <a class="nav-link" href="{{ route('register') }}">Зарегистрироваться</a>
                         </li>
                     </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown">
+                           <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false" v-pre>
+                                 Администратор
+                           </a>
+                           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="http://internet-shop.tmweb.ru/logout"
+                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                Выйти
+                              </a>
+                              <form id="logout-form" action="http://internet-shop.tmweb.ru/logout" method="POST" style="display: none">
+                                  <input type="hidden" name="token" value="d7QDs9wqIfjbDPmRnYBPyi5nJYXSvEsQJVGEK2Jg">
+                              </form>
+                           </div>
+                        </li>
+                    </ul>
                 
             </div>
         </div>
@@ -47,15 +64,8 @@
     <div class="py-4">
         <div class="container">
             <div class="row justify-content-center">
-                    <div class="col-md-8">
-        <div class="card">
-        <div class="card-header">@yield('title')</div>
-
-            <div class="card-body">
-            @yield('content')
-            </div>
-        </div>
-    </div>
+            @yield('content')       <!-- перенесен --> 
+                                    <!-- удаленные строки -->
             </div>
         </div>
     </div>
