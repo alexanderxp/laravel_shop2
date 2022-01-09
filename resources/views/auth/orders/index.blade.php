@@ -27,12 +27,13 @@
             Действия
          </th>
       </tr>
+      @foreach($orders as $order)
       <tr>
-         <td>1</td>
-         <td>Roman Davydov</td>
-         <td>0543219482</td>
-         <td>2019.11.12 13:48:55</td>
-         <td>71990 руб</td>
+         <td>{{ $order->id }}</td>          
+         <td>{{ $order->name }}</td>       
+         <td>{{ $order->phone }}</td>     
+         <td>{{ $order->created_at }}</td>       
+         <td>{{ $order->getFullPrice() }}</td>   
          <td>
             <div class="btn-group" role="group">
                 <a class="btn btn-success" type="button" href="http://internet-shop.tmweb.ru/admin/orders/1">
@@ -41,6 +42,7 @@
             </div>
          </td>
       </tr>
+      @endforeach
       </tbody>
    </table>
 </div>
