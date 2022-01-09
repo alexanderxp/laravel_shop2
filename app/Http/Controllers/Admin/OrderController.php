@@ -11,7 +11,7 @@ class OrderController extends Controller
     public function index()  
     {       
         $orders = Order::where('status', 1)->get();             
-        dd($orders);
-        return view('auth.orders.index');
+        
+        return view('auth.orders.index',compact('orders'));
     }            
 }
