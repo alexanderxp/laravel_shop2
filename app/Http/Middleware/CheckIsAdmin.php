@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Support\Facades\Auth;
 
 class CheckIsAdmin
 {
@@ -15,6 +16,8 @@ class CheckIsAdmin
      */
     public function handle($request, Closure $next)
     {
+        $user = auth::user();    
+        dd($user);                
         return $next($request);
     }
 }
