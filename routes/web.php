@@ -39,11 +39,11 @@ Route::group([ 'prefix' => 'basket'], function () {
        'middleware' => 'basket_not_empty',
                          
     ], function () {
-          Route::get('/', 'BasketController@basket')-> name('basket');                   
-          Route::get('/place', 'BasketController@basketPlace')-> name('basket-place');    
+        Route::get('/', 'BasketController@basket')-> name('basket');                   
+        Route::get('/place', 'BasketController@basketPlace')-> name('basket-place');    
 
-          Route::post('/remove/{id}', 'BasketController@basketRemove')->name('basket-remove'); 
-          Route::post('/place', 'BasketController@basketConfirm')-> name('basket-confirm');  
+        Route::post('/remove/{id}', 'BasketController@basketRemove')->name('basket-remove'); 
+        Route::post('/place', 'BasketController@basketConfirm')-> name('basket-confirm');  
     });
  }); 
 
