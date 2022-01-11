@@ -18,7 +18,8 @@ class BasketIsNotEmpty
     {
         $orderId = session('orderId');                
         if(!is_null($orderId)){                   
-            $order = Order::findOrFail($orderId);   
+            $order = Order::findOrFail($orderId);  
+            dd($order->products); 
             if ($order->products->count() == 0){                     
                 session()->flash('warning', 'Ваша корзина пуста'); 
                 return redirect()->route('index');                 
