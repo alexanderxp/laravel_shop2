@@ -84,7 +84,7 @@
                             <td>mobiles</td>
                             <td>Мобильные телефоны</td>
                             <td>
-                                <div class="btn-group" "role="group">
+                                <div class="btn-group" role="group">
                                     <form action="http://internet-shop.tmweb.ru/admin/categories/1" method="POST">
                                         <a class="btn btn-success" type="button" 
                                            href="http://internet-shop.tmweb.ru/admin/categories/1">Открыть</a>
@@ -103,7 +103,7 @@
                             <td>portable</td>
                             <td>Портативная техника</td>
                             <td>
-                                <div class="btn-group" "role="group">
+                                <div class="btn-group" role="group">
                                     <form action="http://internet-shop.tmweb.ru/admin/categories/2" method="POST">
                                         <a class="btn btn-success" type="button" 
                                            href="http://internet-shop.tmweb.ru/admin/categories/2">Открыть</a>
