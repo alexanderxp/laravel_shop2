@@ -14,7 +14,7 @@ class AlterTableOrders extends Migration
     public function up()
     {
         Schema::table('orders', function (Blueprint $table) {   
-            $table->Integer('user_id');
+            $table->Integer('user_id')->nullable();
         });
     }
 
