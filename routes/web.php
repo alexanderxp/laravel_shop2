@@ -21,7 +21,8 @@ Route::get('/logout', 'Auth\LoginController@logout')-> name('get-logout');
 
 Route::group([
     'middleware' => 'auth',
-    'namespace' => 'Admin',    
+    'namespace' => 'Admin',  
+    'prefix' => 'Admin',  
 ], function() {    
     Route::group(['middleware' => 'is_admin'], function () {    
         Route::get('/orders', 'OrderController@index')-> name('home');  
