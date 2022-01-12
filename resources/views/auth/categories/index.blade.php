@@ -23,9 +23,9 @@
                         </tr>   
                         @foreach($categories as $category)          
                         <tr>
-                            <td>1</td>
-                            <td>mobiles</td>
-                            <td>Мобильные телефоны</td>
+                        <td>{{ $category->id }}</td>
+                        <td>{{ $category->code }}</td>
+                        <td>{{ $category->name }}</td>
                             <td>
                                 <div class="btn-group" role="group">
                                     <form action="http://internet-shop.tmweb.ru/admin/categories/1" method="POST">
