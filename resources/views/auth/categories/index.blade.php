@@ -20,7 +20,8 @@
                             <th>
                                 Действия
                             </th>
-                        </tr>             
+                        </tr>   
+                        @foreach($categories as $category)          
                         <tr>
                             <td>1</td>
                             <td>mobiles</td>
@@ -39,43 +40,9 @@
                                     </form>
                                 </div>
                             </td>
-                        </tr>             
-                        <tr>
-                            <td>2</td>
-                            <td>portable</td>
-                            <td>Портативная техника</td>
-                            <td>
-                                <div class="btn-group" role="group">
-                                    <form action="http://internet-shop.tmweb.ru/admin/categories/2" method="POST">
-                                        <a class="btn btn-success" type="button" 
-                                           href="http://internet-shop.tmweb.ru/admin/categories/2">Открыть</a>
-                                        <a class="btn btn-warning" type="button" 
-                                           href="http://internet-shop.tmweb.ru/admin/categories/2/edit">Редактировать</a>
-                                        <input type="hidden" name="_token" value="m2SZwWq2bCfl7LFcWk4WN7SXLp1YUTLRv7FcEztt">
-                                        <input type="hidden" name="_method" value="DELETE">
-                                        <input class="btn btn-danger" type="submit" value="Удалить">
-                                    </form>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>appliances</td>
-                            <td>Бытовая техника</td>
-                            <td>
-                                <div class="btn-group" role="group">
-                                    <form action="http://internet-shop.tmweb.ru/admin/categories/3" method="POST">
-                                        <a class="btn btn-success" type="button" 
-                                           href="http://internet-shop.tmweb.ru/admin/categories/3">Открыть</a>
-                                        <a class="btn btn-warning" type="button" 
-                                           href="http://internet-shop.tmweb.ru/admin/categories/3/edit">Редактировать</a>
-                                        <input type="hidden" name="_token" value="m2SZwWq2bCfl7LFcWk4WN7SXLp1YUTLRv7FcEztt">
-                                        <input type="hidden" name="_method" value="DELETE">
-                                        <input class="btn btn-danger" type="submit" value="Удалить">
-                                    </form>
-                                </div>
-                            </td>
                         </tr>   
+                        @endforeach           
+                         
                         </tbody>
                     </table>
                     <a class="btn btn-success" type="button" 
