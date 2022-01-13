@@ -3,6 +3,7 @@
 @section('title', 'Категория' . $category->name)
 
 @section('content')
+                <div class="col-md-12">
                     <h1>Категория бытовой техники</h1>
                     <table class="table">
                         <tbody>
@@ -32,7 +33,7 @@
                         </tr>
                         <tr>
                             <td>Картинка</td>
-                            <td><img src="" height="240px"></td>
+                            <td><img src="http://internet-shop.tmweb.ru/storage/products/iphone_x.jpg" height="240px"></td>
                         </tr>
                         <tr>
                             <td>Кол-во товаров</td>
