@@ -1,6 +1,10 @@
 @extends('auth.layouts.master')
 
-@section('title', 'Создать категорию')
+@isset($category)                                                    
+    @section('title', 'Редактировать категорию' . $category->name)   
+@else                                                                
+    @section('title', 'Создать категорию')
+@endisset 
 
 @section('content')
                 <div class="col-md-12">
