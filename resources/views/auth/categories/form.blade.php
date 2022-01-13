@@ -1,14 +1,14 @@
 @extends('auth.layouts.master')
 
-@section('title', 'Заказы') 
+@section('title', 'Создать категорию')
 
 @section('content')
                 <div class="col-md-12">
                     <h1>Добавить категорию</h1>
                     <form method="POST" enctype=multipart/form-data
-                          action="http://internet-shop.tmweb.ru/admin/categories">
+                          action="{{ route('categories.store') }}">
                         <div>
-                            <input type="hidden" name="_token" value="m2SZwWq2bCfl7LFcWk4WN7SXLp1YUTLRv7FcEztt">
+                        @csrf 
                             <div class="input-group row">
                                 <label for="code" class="col-sm-2 col-form-label">Код: </label>
                                 <div class="col-sm-6">
