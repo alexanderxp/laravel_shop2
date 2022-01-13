@@ -17,19 +17,19 @@
                         </tr>
                         <tr>
                             <td>ID</td>
-                            <td>3</td>
+                            <td>{{ $category->id }}</td> 
                         </tr>
                         <tr>
                             <td>Код</td>
-                            <td>appliances</td>
+                            <td>{{ $category->code }}</td>
                         </tr>
                         <tr>
                             <td>Название</td>
-                            <td>Бытовая техника</td>
+                            <td>{{ $category->name }}</td> 
                         </tr>
                         <tr>
                             <td>Описание</td>
-                            <td>Раздел с бытовой техникой</td>
+                            <td>{{ $category->description }}</td>
                         </tr>
                         <tr>
                             <td>Картинка</td>
@@ -37,7 +37,7 @@
                         </tr>
                         <tr>
                             <td>Кол-во товаров</td>
-                            <td>4</td>
+                            <td>{{ $category->products->count() }}</td>
                         </tr>
                         </tbody>
                     </table>
