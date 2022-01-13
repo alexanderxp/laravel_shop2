@@ -60,7 +60,7 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        return view('auth.categories.form', compact('category'));
     }
 
     /**
