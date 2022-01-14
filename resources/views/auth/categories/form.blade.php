@@ -34,7 +34,7 @@
                             <label for="name" class="col-sm-2 col-form-label">Название: </label>
                                 <div class="col-sm-6">
                                     <input type="text" class="form-control" name="name" id="name"
-                                        value="">
+                                        value="@isset($category){{ $category->name }}@endisset">
                                 </div>
                             </div>
                             <br>
@@ -42,7 +42,7 @@
                             <label for="description" class="col-sm-2 col-form-label">Описание: </label>
                                 <div class="col-sm-6">
                                     <textarea name="description" id="description" cols="72"
-                                        rows="7"></textarea>
+                                    rows="7">@isset($category){{ $category->description }}@endisset</textarea>
                                 </div>
                             </div>
                             <br>
