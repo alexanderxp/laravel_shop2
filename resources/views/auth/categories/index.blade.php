@@ -32,7 +32,7 @@
                                         <a class="btn btn-success" type="button" 
                                            href="{{ route('categories.show', $category) }}">Открыть</a>
                                         <a class="btn btn-warning" type="button" 
-                                           href="http://internet-shop.tmweb.ru/admin/categories/1/edit">Редактировать</a>
+                                           href="{{ route('categories.edit', $category) }}">Редактировать</a>
                                         <input type="hidden" name="_token" 
                                            value="m2SZwWq2bCfl7LFcWk4WN7SXLp1YUTLRv7FcEztt">
                                         <input type="hidden" name="_method" value="DELETE">
