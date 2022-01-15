@@ -1,6 +1,10 @@
 @extends('auth.layouts.master')
 
-@section('title', 'Заказы') 
+@isset($category)                                                    
+@section('title', 'Редактировать товар' . $product->name)             
+@else                                                                 
+    @section('title', 'Добавить товар') 
+@endisset
 
 @section('content')
                 <div class="col-md-12">
