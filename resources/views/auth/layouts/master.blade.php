@@ -29,7 +29,7 @@
 
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="http://internet-shop.tmweb.ru/admin/categories">Категории</a></li>
+                    <li><a href="{{ route('categories.index') }}">Категории</a></li>
                     <li><a href="http://internet-shop.tmweb.ru/admin/products">Товары</a></li>
                     <li><a href="http://internet-shop.tmweb.ru/admin/orders">Заказы</a></li>
                 </ul>
