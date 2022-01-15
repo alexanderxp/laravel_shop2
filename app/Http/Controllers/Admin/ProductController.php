@@ -49,7 +49,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view('auth.products.show' , compact('product'));
     }
 
     /**
