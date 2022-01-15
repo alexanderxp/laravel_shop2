@@ -18,19 +18,19 @@
                         </tr>
                         <tr>
                             <td>ID</td>
-                            <td>1</td>
+                            <td>{{ $product->id }}</td>             
                         </tr>
                         <tr>
                             <td>Код</td>
-                            <td>iphone_x_64</td>
+                            <td>{{ $product->code }}</td>           
                         </tr>
                         <tr>
                             <td>Название</td>
-                            <td>iPhone X 64GB</td>
+                            <td>{{ $product->name }}</td>       
                         </tr>
                         <tr>
                             <td>Описание</td>
-                            <td>Отличный продвинутый телефон с памятью на 64 gb</td>
+                            <td>{{ $product->description }}</td>   
                         </tr>
                         <tr>
                             <td>Картинка</td>
@@ -38,7 +38,7 @@
                         </tr>
                         <tr>
                             <td>Категория</td>
-                            <td>Мобильные телефоны</td>
+                            <td>{{ $product->category->name }}</td>
                         </tr>
                    </tbody>
                </div>
