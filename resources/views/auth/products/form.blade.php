@@ -110,7 +110,7 @@
                             <br>
                             <div class="input-group row">
                             <label for="price" class="col-sm-2 col-form-label">Цена: </label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-2">
                                     <input type="text" class="form-control" name="price" id="price"
                                         value="">
                                 </div>
