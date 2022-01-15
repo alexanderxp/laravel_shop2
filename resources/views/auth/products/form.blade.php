@@ -21,6 +21,9 @@
                         @endisset                                                         
                             >
                         <div>
+                        @isset($product)  
+                            @method('PUT')
+                        @endisset
                             @csrf
                             <div class="input-group row">
                                 <label for="code" class="col-sm-2 col-form-label">Код: </label>
