@@ -38,7 +38,7 @@
                                 <div class="btn-group" role="group">
                                     <form action="http://internet-shop.tmweb.ru/admin/products/1" method="POST">
                                         <a class="btn btn-success" type="button" 
-                                           href="http://internet-shop.tmweb.ru/admin/products/1">Открыть</a>
+                                           href="{{ route('products.show', $product) }}">Открыть</a>
                                         <a class="btn btn-warning" type="button" 
                                            href="http://internet-shop.tmweb.ru/admin/products/1/edit">Редактировать</a>
                                         <input type="hidden" name="_token" 
