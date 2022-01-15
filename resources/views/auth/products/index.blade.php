@@ -27,13 +27,13 @@
                                 Действия
                             </th>
                         </tr>
-                        @foreach($products as $product)    
+                        @foreach($products as $product)
                         <tr>
-                            <td>1</td>
-                            <td>iphone_x_64</td>
-                            <td>iPhone X 64GB</td>
-                            <td>Мобильные телефоны</td>
-                            <td>71990</td>
+                        <td>{{ $product->id }}</td>       
+                        <td>{{ $product->code }}</td>       
+                        <td>{{ $product->name }}</td>        
+                        <td>{{ $product->category->name }}</td>  
+                        <td>{{ $product->price }}</td>           
                             <td>
                                 <div class="btn-group" role="group">
                                     <form action="http://internet-shop.tmweb.ru/admin/products/1" method="POST">
@@ -49,8 +49,8 @@
                                 </div>
                             </td>
                         </tr>
-                        @endforeach                 -
-                                                   
+                        @endforeach
+                        
                         </tbody>
                     </table>
                     <a class="btn btn-success" type="button" 
