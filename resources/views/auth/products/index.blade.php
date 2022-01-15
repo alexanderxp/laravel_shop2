@@ -40,7 +40,7 @@
                                         <a class="btn btn-success" type="button" 
                                            href="{{ route('products.show', $product) }}">Открыть</a>
                                         <a class="btn btn-warning" type="button" 
-                                           href="http://internet-shop.tmweb.ru/admin/products/1/edit">Редактировать</a>
+                                           href="{{ route('products.edit', $product) }}">Редактировать</a>
                                         <input type="hidden" name="_token" 
                                            value="m2SZwWq2bCfl7LFcWk4WN7SXLp1YUTLRv7FcEztt">
                                         <input type="hidden" name="_method" value="DELETE">
