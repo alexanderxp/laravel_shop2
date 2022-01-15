@@ -26,7 +26,7 @@
                                 <label for="code" class="col-sm-2 col-form-label">Код: </label>
                                 <div class="col-sm-6">
                                     <input type="text" class="form-control" name="code" id="code"
-                                        value="">
+                                        value="@isset($product){{ $product->code }}@endisset">
                                 </div>
                             </div>
                             <br>
