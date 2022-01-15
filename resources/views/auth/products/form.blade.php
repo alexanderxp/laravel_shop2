@@ -8,9 +8,18 @@
 
 @section('content')
                 <div class="col-md-12">
-                    <h1>Добавить товар</h1>
+                    @isset($product)                                                                               
+                        <h1>Редактировать товар <b>{{ $product->name }} </b></h1>  
+                    @else                                                                                   
+                        <h1>Добавить товар</h1>
+                    @endisset 
                     <form method="POST" enctype=multipart/form-data
-                          action="{{ route('products.store') }}">
+                        @isset($category)                                                 
+                            action="{{ route('products.update', $product) }}"              
+                        @else                                                            
+                            action="{{ route('products.store') }}" 
+                        @endisset                                                         
+                            >
                         <div>
                             @csrf
                             <div class="input-group row">
