@@ -54,6 +54,6 @@
                         </tbody>
                     </table>
                     <a class="btn btn-success" type="button" 
-                        href="http://internet-shop.tmweb.ru/admin/products.create">Добавить товар</a>
+                        href="{{ route('products.create') }}">Добавить товар</a>
                 </div>
 @endsection
