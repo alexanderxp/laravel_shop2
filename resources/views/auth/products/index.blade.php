@@ -36,14 +36,13 @@
                         <td>{{ $product->price }}</td>           
                             <td>
                                 <div class="btn-group" role="group">
-                                    <form action="http://internet-shop.tmweb.ru/admin/products/1" method="POST">
+                                    <form action="{{ route('products.destroy', $product) }}" method="POST">
                                         <a class="btn btn-success" type="button" 
                                            href="{{ route('products.show', $product) }}">Открыть</a>
                                         <a class="btn btn-warning" type="button" 
                                            href="{{ route('products.edit', $product) }}">Редактировать</a>
-                                        <input type="hidden" name="_token" 
-                                           value="m2SZwWq2bCfl7LFcWk4WN7SXLp1YUTLRv7FcEztt">
-                                        <input type="hidden" name="_method" value="DELETE">
+                                        @csrf
+                                        @method('DELETE')
                                         <input class="btn btn-danger" type="submit" value="Удалить">
                                     </form>
                                 </div>
