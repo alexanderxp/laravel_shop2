@@ -1,6 +1,6 @@
 @extends('auth.layouts.master')
 
-@isset($category)                                                    
+@isset($product)                                                    
 @section('title', 'Редактировать товар' . $product->name)             
 @else                                                                 
     @section('title', 'Добавить товар') 
@@ -14,7 +14,7 @@
                         <h1>Добавить товар</h1>
                     @endisset 
                     <form method="POST" enctype=multipart/form-data
-                        @isset($category)                                                 
+                        @isset($product)                                                 
                             action="{{ route('products.update', $product) }}"              
                         @else                                                            
                             action="{{ route('products.store') }}" 
