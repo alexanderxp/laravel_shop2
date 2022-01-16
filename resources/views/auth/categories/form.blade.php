@@ -21,7 +21,7 @@
                     @endisset
                     >
                         <div>
-                            @isset($product)
+                            @isset($category)
                                 @method('PUT')
                             @endisset
                             @csrf 
