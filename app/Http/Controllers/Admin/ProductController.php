@@ -26,7 +26,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('auth.products.form');
+        $categories = Category::get();
+        return view('auth.products.form', compact($categories));
     }
 
     /**
@@ -60,7 +61,8 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        return view('auth.products.form', compact('product'));
+        $categories = Category::get();
+        return view('auth.products.form', compact('product', 'categories'));
     }
 
     /**
