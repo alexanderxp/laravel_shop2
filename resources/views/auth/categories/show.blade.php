@@ -33,7 +33,7 @@
                         </tr>
                         <tr>
                             <td>Картинка</td>
-                            <td><img src="http://internet-shop.tmweb.ru/storage/products/iphone_x.jpg" height="240px"></td>
+                            <td><img src="{{ Storage::url($category->image) }}" height="240px"></td>
                         </tr>
                         <tr>
                             <td>Кол-во товаров</td>
