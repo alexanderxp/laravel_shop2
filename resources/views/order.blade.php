@@ -66,9 +66,7 @@
                             </div>                                                    
                     </div>                                                          
                     <br>                                                            
-                    <input type="hidden"                                            
-                           name="_token"                                              
-                           value="cuWxcdjeVpIBpSvQxFGrBoz8Q2Q18ZteNVMK0g86"> 
+
                     @csrf           
                     <input type="submit"                                                
                            class="btn btn-success"                                      
