@@ -9,6 +9,14 @@ APP_URL=http://127.0.0.1:8000
 FILESYSTEM_DRIVER=public
 
 
+&
+write command 
+to create link to public/storage
+in terminal:
+-----------------------------
+php artisan storage:link
+
+
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
 .env
